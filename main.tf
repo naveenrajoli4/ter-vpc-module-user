@@ -1,7 +1,7 @@
 module "vpc" {
 
-  source                    = "../ter-vpc-module-dev" # This refers from our local laptop
-#   source = "git::https://github.com/naveenrajoli4/ter-vpc-module-dev.git?ref=main" # This reffer from git hub
+  source = "../ter-vpc-module-dev" # This refers from our local laptop
+  #   source = "git::https://github.com/naveenrajoli4/ter-vpc-module-dev.git?ref=main" # This reffer from git hub
   location                  = var.location
   project_name              = var.project_name
   environment               = var.environment
