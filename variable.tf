@@ -63,3 +63,22 @@ variable "database_subnet_tags" {
         Purpose = "database-subet-creation-for-expense"
     }
 }
+
+ variable "public_route_table_tags" {
+      default = {
+        Purpose = "public-route-table-creation-for-expense"
+    }
+ }
+
+ variable "private_route_table_tags" {
+      default = {
+        Purpose = "private-route-table-creation-for-expense"
+    }
+ }
+
+  variable "database_route_table_tags" {
+      default = {
+        Purpose = "database-route-table-creation-for-expense"
+    }
+ }
+ 

@@ -13,5 +13,9 @@ module "vpc" {
     private_subnet_tags = var.private_subnet_tags
     database_subnet_cidr = var.database_subnet_cidr
     database_subnet_tags = var.database_subnet_tags
+    public_route_table_tags = var.public_route_table_tags
+    private_route_table_tags = var.private_route_table_tags
+    database_route_table_tags = var.database_route_table_tags
+    is_peering_required = true # This is for peering b/w 2 vpc's
 
     }
